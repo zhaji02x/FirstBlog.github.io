@@ -313,19 +313,21 @@ html {
 	height: 100%
 }
 
+
+
 body {
-	margin: 0;
-	font-size: 14px;
-	font-family: Helvetica Neue,Helvetica,STHeiTi,Arial,sans-serif;
-	line-height: 1.5;
-	color: #333;
-	/* background-color: #fff; */
-	min-height: 100%
-	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-    url('https://desk-fd.zol-img.com.cn/t_s960x600c5/g5/M00/02/00/ChMkJlbKw6KIXhXnAA4L-_oxRzUAALG6QBUSg8ADgwT181.jpg') no-repeat 0% 0%/ cover;
-  /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), */
-  /* url('https://s2.seikim.com/i/2022/07/16/u1jt9o.jpg') no-repeat 0% 0%/ cover */
+    margin:0;
+    font-size:14px;
+    font-family:Helvetica Neue, Helvetica, STHeiTi, Arial, sans-serif;
+    line-height:1.5;
+    color:#333;
+    /* background-color:#fff; */
+    min-height:100%;
+
+    background: linear-gradient(rgba(255, 255, 255,.15), rgba(255, 255, 255, .25)),
+    url('https://s2.seikim.com/i/2022/07/16/u1jt9o.jpg') no-repeat 0% 40%/ cover;
 }
+
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
 	display: block
@@ -760,7 +762,7 @@ body,button,input,select,textarea {
 
 body {
 	overflow-y: hidden;
-	/* background: #eaeaea */
+
 }
 
 #container,body,html {
@@ -811,8 +813,8 @@ body {
 
 .left-col {
 	/* background: #fff; */
-	background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
-	    url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588096761872&di=78faeda41ce4531f2929e20ed90669c3&imgtype=0&src=http://b-ssl.duitang.com/uploads/item/201612/09/20161209000936_zaXwh.jpeg')no-repeat 0% 20%/ cover;
+	background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+	    /* url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1588096761872&di=78faeda41ce4531f2929e20ed90669c3&imgtype=0&src=http://b-ssl.duitang.com/uploads/item/201612/09/20161209000936_zaXwh.jpeg')no-repeat 0% 20%/ cover; */
 
 	width: 300px;
 	position: fixed;
@@ -842,7 +844,7 @@ body {
 }
 
 .left-col #header a {
-	color: #696969
+	color: #F5F5F5
 }
 
 .left-col #header a:hover {
@@ -863,7 +865,7 @@ body {
 
 .left-col #header .header-menu {
 	font-weight: 300;
-	line-height: 31px;
+	line-height: 38px;
 	text-transform: uppercase;
 	float: none;
 	min-height: 150px;
@@ -927,7 +929,7 @@ body {
     background: #88acdb;
     border-radius: 50%;
     border: 0;
-    -webkit-transition: -webkit-transform 1s ease-out;
+    -webkit-transition: -webkit-transform 0.7s ease-out;
     -moz-transition: -moz-transform 1s ease-out;
     -o-transition: -o-transform 1s ease-out;
     -ms-transition: -ms-transform 1s ease-out
@@ -948,7 +950,7 @@ body {
 	margin: .67em 0;
 	font-family: Roboto,serif;
 	font-size: 30px;
-	transition: .3s
+	transition: .2s
 }
 
 ::-webkit-scrollbar {
@@ -1618,7 +1620,11 @@ pre .css~* .id,pre .id {
 	margin: 0 30px;
 	padding-right: 60px;
 	border-bottom: 1px solid #eee;
-	background: #fff
+	/* background: #fff */
+
+
+	background: rgba(255,255,255,.7);
+	transition: all .2s ease-in
 }
 
 .archives-wrap:first-child {
@@ -2060,8 +2066,8 @@ pre .css~* .id,pre .id {
     border: 1px solid #ddd;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    background: #fff;
-    /* background: rgba(255,255,255,.5); */
+    /* background: #fff; */
+    background: rgba(255,255,255,.85);
     transition: all .2s ease-in
 }
 
@@ -2388,7 +2394,7 @@ pre .css~* .id,pre .id {
 }
 
 #article-nav .article-nav-link-wrap:hover .article-nav-title,#article-nav .article-nav-link-wrap:hover i {
-	color: #4d4d4d
+	/* color: #4d4d4d */
 }
 
 #article-nav #article-nav-older {
@@ -2397,6 +2403,7 @@ pre .css~* .id,pre .id {
 
 #disqus_thread,#gitment-ctn,#SOHUCS,.cloud-tie-wrapper,.duoshuo {
 	padding: 0 30px!important;
+
 	min-height: 20px
 }
 
@@ -2947,13 +2954,14 @@ pre .css~* .id,pre .id {
 }
 
 #footer {
-	font-size: 12px;
+	font-size: 15px;
 	font-family: Menlo,Monaco,Andale Mono,lucida console,Courier New,monospace;
 	text-shadow: 0 1px #fff;
 	position: absolute;
 	bottom: 30px;
 	opacity: .6;
 	width: 100%;
+	color:
 	text-align: center
 }
 
@@ -4084,8 +4092,8 @@ a.pswp__share--download:hover {
 }
 
 .declare {
-	background-color: #eaeaea;
-	margin-top: 2em;
-	border-left: 3px solid #ff1700;
+	background:rgba(255, 255, 255,.5);
+	margin-top: 5em;
+	border-left: 3px solid #d7adee;
 	padding: .5em 1em;
 }
