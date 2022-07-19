@@ -64,7 +64,7 @@
 				<li><a href="/archives/index.html">归档</a></li>
 	        
 					<nav class="zongshu">
-			   			 总文章数3
+			   			 文 章 总 数 3
 					</nav>
 			</ul>
 		</nav>
@@ -379,24 +379,67 @@
   
 
   
+     <section id="comments" class="comments">
+       <style>
+         .comments{margin:30px;padding:10px;background:rgba(255,255,255,.85)}
+         @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+       </style>
+       <div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<!-- <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script> -->
+<script src="//code.bdstatic.com/npm/leancloud-storage@4.12.0/dist/av-min.js"></script>
+
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  var notify = 'false' == true ? true : false;
+  var verify = 'false' == true ? true : false;
+  new Valine({
+      av: AV,
+      el: '.valine_comment',
+      emoticon_url: 'https://cloud.panjunwen.com/alu',
+      emoticon_list: ["狂汗.png","不说话.png","汗.png","坐等.png","献花.png","不高兴.png","中刀.png","害羞.png","皱眉.png","小眼睛.png","暗地观察.png"],
+      app_id: 'YsTcipAnf0uBAXi2TMet0XM3-gzGzoHsz',
+      app_key: 'z4CHnzW2lV6O3KnnRdtdQwQU',
+      placeholder: '欢迎评论!',
+      pageSize: '15',
+      avatar_cdn: 'https://sdn.geekzu.org/avatar/'
+    });
+
+
+    document.body.addEventListener('click', function(e) {
+    if (e.target.classList.contains('vsubmit')) {
+        const email = document.querySelector('input[type=email]');
+        const nick = document.querySelector('input[name=nick]');
+        const reg = /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+        if (!email.value || !nick.value || !reg.test(email.value)) {
+            const str = `<div class="valert txt-center"><div class="vtext">请填写正确的昵称和邮箱！</div></div>`;
+            const vmark = document.querySelector('.vmark');
+            vmark.innerHTML = str;
+            vmark.style.display = 'block';
+
+            e.stopPropagation();
+
+            setTimeout(function() {
+                vmark.style.display = 'none';
+                vmark.innerHTML = '';
+            }, 2500);
+        }
+    }
+    }, true);
+</script>
+
+   </section>
+  
+
+
 
   
-  <div id="gitment-ctn"></div> 
-<link rel="stylesheet" href="//imsun.github.io/gitment/style/default.css">
-<script src="//imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: "http://zhaji02x.github.io/2022/07/15/hello-world/",
-  owner: 'zhaji02x',
-  repo: 'blogComments',
-  oauth: {
-    client_id: 'b03e8ae2b5ccdba24b3c',
-    client_secret: 'f2eae3c1fc22a837f7453a63a7adb0deb51ae1c7',
-  },
-})
-gitment.render('gitment-ctn')
-</script>
+
   
+
+
 
 
           </div>
@@ -572,7 +615,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
+              <a href="https://www.xiaoluoxiaorao.top/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>同好</a>
             </li>
           
             <li class="search-li">

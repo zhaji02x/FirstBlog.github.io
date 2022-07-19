@@ -2401,9 +2401,8 @@ pre .css~* .id,pre .id {
 	float: right
 }
 
-#disqus_thread,#gitment-ctn,#SOHUCS,.cloud-tie-wrapper,.duoshuo {
+#disqus_thread,#gitment,#SOHUCS,.cloud-tie-wrapper,.duoshuo {
 	padding: 0 30px!important;
-
 	min-height: 20px
 }
 
@@ -4096,4 +4095,17 @@ a.pswp__share--download:hover {
 	margin-top: 5em;
 	border-left: 3px solid #d7adee;
 	padding: .5em 1em;
+}
+
+.zongshu {
+	color: #d295ab;
+	font-size: 15px;
+	margin-top: 2em;
+		text-shadow: 2px 1px #39500f;
+font-weight: normal;
+		font-family: Microsoft YaHei;
+}
+
+.valine {
+	height: 100px;
 }
