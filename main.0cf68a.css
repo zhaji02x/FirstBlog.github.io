@@ -844,7 +844,7 @@ body {
 }
 
 .left-col #header a {
-	color: #F5F5F5
+	color: #f6efef
 }
 
 .left-col #header a:hover {
@@ -853,14 +853,15 @@ body {
 
 .left-col #header .header-subtitle {
 	text-align: center;
-	color: #999;
+	color: #bd99af;
 	font-size: 14px;
-	line-height: 25px;
+	line-height: 30px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical
+
 }
 
 .left-col #header .header-menu {
@@ -947,10 +948,11 @@ body {
 
 .left-col #header .header-author {
 	text-align: center;
-	margin: .67em 0;
-	font-family: Roboto,serif;
-	font-size: 30px;
+	margin: .40em 0;
+	font-family: Simhei;
+	font-size: 29px;
 	transition: .2s
+
 }
 
 ::-webkit-scrollbar {
@@ -1036,7 +1038,8 @@ body {
 	font-family: Source Code Pro,Consolas,Monaco,Menlo,monospace
 }
 
-.article-entry code {
+.article-
+ code {
 	background: #eee;
 	padding: 0 .3em;
 	border: none
@@ -4098,11 +4101,11 @@ a.pswp__share--download:hover {
 }
 
 .zongshu {
-	color: #d295ab;
+	color: #bd99af;
 	font-size: 15px;
 	margin-top: 2em;
-		text-shadow: 2px 1px #39500f;
-font-weight: normal;
+
+  font-weight: 8px;
 		font-family: Microsoft YaHei;
 }
 
