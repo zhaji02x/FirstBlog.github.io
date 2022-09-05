@@ -1023,11 +1023,11 @@ body {
 }
 
 .article-entry .highlight,.article-entry pre {
-	background: #272822;
+	background: #282c34;
 	margin: 10px 0;
 	padding: 10px;
 	overflow: auto;
-	color: #fff;
+	color: #abb2bf;
 	font-size: .9em;
 	line-height: 22.400000000000002px
 }
